@@ -120,7 +120,23 @@ Deliberately kept out of the global file (better as per-game Steam launch option
 - `PROTON_NVIDIA_LIBS_NO_32BIT=1`: fixes an RTX 4000-series-specific issue, not applicable to the 3060 Ti.
 - `PROTON_NO_NTSYNC=1`, `PROTON_ENABLE_WAYLAND=1`, `PROTON_PREFER_SDL=1`: workarounds for specific game bugs.
 
+### dxvk.conf (NVIDIA RTX 3060 Ti / AW3423DWF)
+
+Shared DXVK config, set in `~/.config/dxvk/dxvk.conf` and pointed to by `DXVK_CONFIG_FILE` above. Applies to every DXVK/Proton game:
+
+```txt
+dxvk.maxFrameRate = 160
+```
+
+- `dxvk.maxFrameRate = 160`: caps DXVK games just under the AW3423DWF's 165Hz max refresh, keeping every game inside the G-Sync range to avoid tearing above it.
+
 https://wiki.cachyos.org/configuration/gaming/
+
+## Games
+
+Per-game tuning notes:
+
+- [Kingdom Come: Deliverance (1)](kingdom-come-deliverance.md)
 
 ## Conclusions
 
