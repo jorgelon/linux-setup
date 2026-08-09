@@ -1,4 +1,4 @@
-# Catchyos Packages
+# Cachyos Packages
 
 Install with shellcheck
 
