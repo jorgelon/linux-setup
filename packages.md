@@ -12,5 +12,9 @@ code shellcheck
 
 chromium
 
+- Clipboard (needed to paste images with CTRL+v in Claude Code under Wayland)
+
+wl-clipboard
+
 
 
