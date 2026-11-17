@@ -19,6 +19,10 @@ See [concepts.md](concepts.md)
 ## Games
 
 - [Kingdom Come: Deliverance (1)](kingdom-come-deliverance.md)
+- [WUCHANG: Fallen Feathers](wuchang-fallen-feathers.md)
+- [DRAGON QUEST VII Reimagined](dragon-quest-vii-reimagined.md)
+- [Assassin's Creed Origins](assassins-creed-origins.md)
+- [Tainted Grail: The Fall of Avalon](tainted-grail-fall-of-avalon.md)
 
 ## Links
 
