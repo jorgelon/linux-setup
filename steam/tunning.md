@@ -11,7 +11,7 @@ See [concepts.md](concepts.md)
 3. use `Proton-CachyOS` per-game (Library > game > Properties > Compatibility) for titles that benefit from its extras. Since this is a global (not per-game) Steam setting, also disable Shader Pre-Caching (Steam > Settings > Downloads, uncheck "Allow background processing of Vulkan shaders" and "Enable Shader Pre-caching") — its cached shaders are built for official Proton and conflict with CachyOS/DXVK's native shader compilation on Proton-CachyOS titles
 4. Steam launch options (per-game, General > Launch Options): `gamemoderun mangohud %command%`
 5. execute `steam/apply-tunning.sh` as root (`sudo steam/apply-tunning.sh`) — configures:
-   - `~/.config/environment.d/gaming.conf` (NVIDIA RTX 3060 Ti): 12GB shader disk cache, skip cache cleanup, DXVK config path, forced DLSS Preset K, DLSS indicator/auto-upgrade, Proton logging
+   - `~/.config/environment.d/gaming.conf` (NVIDIA RTX 3060 Ti): 12GB shader disk cache, skip cache cleanup, DXVK config path, forced DLSS Preset K, DLSS indicator/auto-upgrade. `PROTON_LOG=1` is left commented out — it writes multi-GB logs (full exception traces) and can cause stutter; enable it per-game in launch options when debugging (`PROTON_LOG=1 gamemoderun mangohud %command%`)
    - `~/.config/dxvk/dxvk.conf` (AW3423DWF): `dxvk.maxFrameRate = 160`, caps DXVK games under the monitor's 165Hz max refresh to stay inside G-Sync range
    - disables `ananicy-cpp` permanently — conflicts with `gamemode` over process niceness, and every game launches through `gamemoderun`
    - ADIOS I/O scheduler for the NVMe disk, if the running kernel supports it (e.g. `linux-cachyos`)
@@ -23,6 +23,8 @@ See [concepts.md](concepts.md)
 - [DRAGON QUEST VII Reimagined](dragon-quest-vii-reimagined.md)
 - [Assassin's Creed Origins](assassins-creed-origins.md)
 - [Tainted Grail: The Fall of Avalon](tainted-grail-fall-of-avalon.md)
+- [Remnant 2](remnant-2.md)
+- [The Surge](the-surge.md)
 
 ## Links
 
